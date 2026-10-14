@@ -9,6 +9,8 @@ Pick a setup from the list, look at a sketch of it, click Apply. DialedInUI move
 your frames with Edit Mode, adjusts a few common game options, and reloads the
 UI. If you don't like it, Undo puts everything back the way it was.
 
+![The DialedInUI layout picker in game](docs/picker.png)
+
 No frames are replaced and nothing is reskinned. Every layout is a normal Edit
 Mode layout called **DialedInUI**, so once it's applied you can open Edit Mode
 and keep adjusting it like any layout you made yourself.
