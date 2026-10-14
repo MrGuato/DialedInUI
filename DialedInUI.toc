@@ -1,0 +1,16 @@
+## Interface: 16001
+## Title: DialedInUI
+## Notes: One-click layouts for Blizzard's own UI. Pick a popular setup, see a sketch of it, apply it, and undo it any time.
+## Author: MrGuato
+## Version: 0.1.0
+## IconTexture: Interface\Icons\INV_Misc_Gear_01
+## AddonCompartmentFunc: DialedInUI_OnAddonCompartmentClick
+## SavedVariables: DialedInUIDB
+## SavedVariablesPerCharacter: DialedInUICharDB
+
+Core.lua
+Layout.lua
+Tweaks.lua
+Presets.lua
+Preview.lua
+Picker.lua
