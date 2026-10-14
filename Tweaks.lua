@@ -5,7 +5,7 @@
 -- Action bars are only ever turned on, never off. If you had a bar enabled
 -- that a preset does not use, it stays enabled.
 
-local ADDON, ns = ...
+local _, ns = ...
 
 local Tweaks = {}
 ns.Tweaks = Tweaks

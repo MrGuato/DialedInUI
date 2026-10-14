@@ -2,7 +2,7 @@
 -- built from. Sizes are approximate (frames grow with buffs, party size and
 -- so on), so this is a sketch of where things go, not a screenshot.
 
-local ADDON, ns = ...
+local _, ns = ...
 
 local Preview = {}
 ns.Preview = Preview

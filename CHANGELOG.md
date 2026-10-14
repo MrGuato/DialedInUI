@@ -8,3 +8,5 @@
 - Applies through Edit Mode as an account layout named DialedInUI.
 - Undo restores your previous layout, settings and action bars.
 - `/dialed check` builds every layout against the running client.
+- luacheck configuration, and a GitHub Actions check that runs luacheck and
+  the test harness on every push.

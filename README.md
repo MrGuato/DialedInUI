@@ -127,10 +127,11 @@ The addon is plain Lua with no libraries.
 The test harness checks every layout against Blizzard's real Edit Mode data,
 including that every stored setting decodes back to the intended value, and
 that no two frames overlap on 16:9, 16:10 and MacBook screens. GitHub Actions
-runs it on every push. Locally it needs a checkout of the `forever` branch of
-the WoW UI source mirror:
+runs luacheck and the harness on every push. Locally the harness needs a
+checkout of the `forever` branch of the WoW UI source mirror:
 
 ```
+luacheck .
 git clone --depth 1 --branch forever https://github.com/Gethe/wow-ui-source
 lua5.1 tests/harness.lua . path/to/wow-ui-source
 ```

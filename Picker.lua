@@ -1,7 +1,7 @@
 -- The layout picker window: a list of layouts on the left, a sketch of the
 -- selected one on the right, and Apply / Undo underneath.
 
-local ADDON, ns = ...
+local _, ns = ...
 
 local Picker = {}
 ns.Picker = Picker

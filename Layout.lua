@@ -10,7 +10,7 @@
 -- C_EditMode and the UI is reloaded afterwards, which keeps the action bars
 -- clean of addon taint.
 
-local ADDON, ns = ...
+local _, ns = ...
 
 local Layout = {}
 ns.Layout = Layout

@@ -14,7 +14,7 @@
 -- cvars are game options, listed in the picker before applying. bars lists
 -- the extra action bars a layout turns on. Bars are never turned off.
 
-local ADDON, ns = ...
+local _, ns = ...
 
 local Presets = {}
 ns.Presets = Presets
