@@ -1,0 +1,25 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.1 and luacheck
+        run: sudo apt-get update && sudo apt-get install -y lua5.1 lua-check
+      - name: Lint
+        run: luacheck .
+      - name: Fetch the Forever Edit Mode source
+        run: |
+          git clone --depth 1 --branch forever --filter=blob:none --sparse https://github.com/Gethe/wow-ui-source ../wow-ui-source
+          cd ../wow-ui-source
+          git sparse-checkout set --no-cone '/Interface/AddOns/Blizzard_EditMode/' '/Interface/AddOns/Blizzard_APIDocumentationGenerated/EditModeManagerConstantsDocumentation.lua'
+      - name: Test
+        run: lua5.1 tests/harness.lua . ../wow-ui-source
